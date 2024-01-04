@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../OpenVelocity"
+		},
+		{
+			"name": "01-arch",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"gd32f4xx_gpio.h": "c",
+			"gd32f4xx.h": "c",
+			"istream": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}

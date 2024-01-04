@@ -1,0 +1,5 @@
+uart.pbi: \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\bsp\hal\uart.cpp \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\bsp\hal/./uart.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp/basetype.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\bsp\hal/iostream.h
