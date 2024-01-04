@@ -66,6 +66,6 @@ void SysTimer<T>::delayUs(uint32 us)
         ;
 }
 
-extern "C" {
-void SYSTICK_HANDER() {}
-}
+//extern "C" {
+//void SYSTICK_HANDER() {}
+//}

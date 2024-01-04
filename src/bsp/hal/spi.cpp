@@ -2,13 +2,13 @@
 
 template<typename T>
 Spi<T>::Spi()
-    : IOstream() {
+    : IOstream<T>() {
 
 }
 
 template<typename T>
 Spi<T>::Spi(const SpiConfig &spi_config) 
-    : IOstream()
+    : IOstream<T>()
     , spi_cfg_(spi_config) {
 
 }
@@ -52,7 +52,7 @@ void Spi<T>::write(T data) {
 template<typename T>
 void Spi<T>::read(T data) {
     while(RESET == spi_i2s_flag_get(spi_cfg_.num, SPI_FLAG_RBNE));
-    spi3_receive_array[receive_n] = spi_i2s_data_receive(spi_cfg_.num);
+//    spi3_receive_array[receive_n] = spi_i2s_data_receive(spi_cfg_.num);
 }
 
 template<typename T>

@@ -1,2 +1,2 @@
 current_loop.pbi: \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\control\current_loop.cpp
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\control\current_loop.cpp

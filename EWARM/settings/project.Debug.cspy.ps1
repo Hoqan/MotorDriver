@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\settings\project.Debug.general.xcl" --backend -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\settings\project.Debug.driver.xcl" 
+& "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\settings\project.Debug.general.xcl" --backend -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\settings\project.Debug.driver.xcl" 
 }
 else
 {
-& "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\settings\project.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\settings\project.Debug.driver.xcl" 
+& "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\settings\project.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\settings\project.Debug.driver.xcl" 
 }

@@ -1,2 +1,2 @@
 pwm.pbi: \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\bsp\hal\pwm.cpp
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\bsp\hal\pwm.cpp

@@ -1,0 +1,3 @@
+main.pbi: \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\app\app_servo_motor.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\app\main.cpp

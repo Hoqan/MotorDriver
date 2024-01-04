@@ -2377,6 +2377,9 @@
         <file>
             <name>$PROJ_DIR$\..\src\app\app_servo_motor.h</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\app\main.cpp</name>
+        </file>
     </group>
     <group>
         <name>bsp</name>

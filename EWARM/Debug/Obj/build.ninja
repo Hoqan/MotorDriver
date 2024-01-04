@@ -21,6 +21,7 @@ rule browsedata
 
 #Build steps
 build app_servo_motor.pbi : index app_servo_motor.xcl
+build main.pbi : index main.xcl
 build as5600.pbi : index as5600.xcl
 build ma702.pbi : index ma702.xcl
 build ssd1306.pbi : index ssd1306.xcl
@@ -28,7 +29,6 @@ build iic.pbi : index iic.xcl
 build pinctrl.pbi : index pinctrl.xcl
 build pwm.pbi : index pwm.xcl
 build spi.pbi : index spi.xcl
-build uart.pbi : index uart.xcl
 build system_gd32f4xx.pbi : index system_gd32f4xx.xcl
 build gd32f4xx_adc.pbi : index gd32f4xx_adc.xcl
 build gd32f4xx_can.pbi : index gd32f4xx_can.xcl
@@ -66,8 +66,8 @@ build order1_lpf.pbi : index order1_lpf.xcl
 build order2_lpf.pbi : index order2_lpf.xcl
 build pid.pbi : index pid.xcl
 build stop_watch.pbi : index stop_watch.xcl
-build project_part0.pbi : link app_servo_motor.pbi as5600.pbi ma702.pbi ssd1306.pbi iic.pbi pinctrl.pbi pwm.pbi
-build project_part1.pbi : link spi.pbi uart.pbi system_gd32f4xx.pbi gd32f4xx_adc.pbi gd32f4xx_can.pbi gd32f4xx_crc.pbi gd32f4xx_ctc.pbi
+build project_part0.pbi : link app_servo_motor.pbi main.pbi as5600.pbi ma702.pbi ssd1306.pbi iic.pbi pinctrl.pbi
+build project_part1.pbi : link pwm.pbi spi.pbi system_gd32f4xx.pbi gd32f4xx_adc.pbi gd32f4xx_can.pbi gd32f4xx_crc.pbi gd32f4xx_ctc.pbi
 build project_part2.pbi : link gd32f4xx_dac.pbi gd32f4xx_dbg.pbi gd32f4xx_dci.pbi gd32f4xx_dma.pbi gd32f4xx_enet.pbi gd32f4xx_exmc.pbi gd32f4xx_exti.pbi
 build project_part3.pbi : link gd32f4xx_fmc.pbi gd32f4xx_fwdgt.pbi gd32f4xx_gpio.pbi gd32f4xx_i2c.pbi gd32f4xx_ipa.pbi gd32f4xx_iref.pbi gd32f4xx_misc.pbi
 build project_part4.pbi : link gd32f4xx_pmu.pbi gd32f4xx_rcu.pbi gd32f4xx_rtc.pbi gd32f4xx_sdio.pbi gd32f4xx_spi.pbi gd32f4xx_syscfg.pbi gd32f4xx_timer.pbi

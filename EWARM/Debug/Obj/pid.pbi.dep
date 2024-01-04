@@ -1,2 +1,2 @@
 pid.pbi: \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\utils\math\pid.cpp
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\utils\math\pid.cpp

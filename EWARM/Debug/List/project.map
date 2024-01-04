@@ -1,0 +1,334 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  04/Jan/2024  23:05:02
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Exe\project.out
+#    Map file     =
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\List\project.map
+#    Command line =
+#        -f C:\Users\YUANHA~1\AppData\Local\Temp\EW5B02.tmp
+#        (E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\app_servo_motor.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\as5600.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\current_loop.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\filter.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_adc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_can.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_crc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_ctc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_dac.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_dbg.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_dci.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_dma.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_enet.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_exmc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_exti.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_fmc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_fwdgt.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_gpio.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_i2c.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_ipa.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_iref.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_misc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_pmu.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_rcu.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_rtc.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_sdio.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_spi.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_syscfg.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_timer.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_tli.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_trng.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_usart.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\gd32f4xx_wwdgt.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\iic.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\ma702.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\main.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\order1_lpf.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\order2_lpf.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\pid.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\pinctrl.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\pwm.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\spi.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\ssd1306.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\startup_gd32f450_470.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\stop_watch.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\system_gd32f4xx.o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj\velocity_loop.o
+#        --no_out_extension -o
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Exe\project.out
+#        --map
+#        E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\List\project.map
+#        --config "D:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\GD\GD32F450xG.icf" --semihosting --entry
+#        __iar_program_start "D:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 8.3\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe
+#        --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor        = *
+__CPP_Exceptions = *
+__CPP_Language   = C++14
+__Heap_Handler   = Basic
+__SystemLibrary  = DLib
+__dlib_version   = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x80f'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2002'ffff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw             in "P2"
+  section .sram  in "P3"
+
+
+  Section   Kind         Address    Size  Object
+  -------   ----         -------    ----  ------
+"A0":                              0x1ac
+  .intvec   ro code   0x800'0000   0x1ac  startup_gd32f450_470.o [1]
+                    - 0x800'01ac   0x1ac
+
+"P1":                              0x368
+  .text     ro code   0x800'01ac   0x158  system_gd32f4xx.o [1]
+  .text     ro code   0x800'0304    0x22  fpinit_M.o [4]
+  .rodata   const     0x800'0326     0x1  unwind_debug.o [6]
+  .text     ro code   0x800'0328    0x1e  cmain.o [5]
+  .text     ro code   0x800'0346     0x4  low_level_init.o [2]
+  .text     ro code   0x800'034a     0x2  main.o [1]
+  .text     ro code   0x800'034c     0x4  exit.o [2]
+  .text     ro code   0x800'0350     0xa  cexit.o [5]
+  .text     ro code   0x800'035c    0x14  exit.o [6]
+  .text     ro code   0x800'0370    0x10  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0380     0xc  cstartup_M.o [5]
+  .text     ro code   0x800'038c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0390     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0394     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0398     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'039c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03a0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03a4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03a8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03ac     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03b0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03b4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03b8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03bc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03c0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03c4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03c8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03cc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03d0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03d4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03d8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03dc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03e0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03e4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03e8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03ec     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03f0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03f4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03f8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'03fc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0400     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0404     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0408     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'040c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0410     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0414     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0418     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'041c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0420     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0424     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0428     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'042c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0430     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0434     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0438     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'043c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0440     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0444     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0448     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'044c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0450     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0454     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0458     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'045c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0460     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0464     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0468     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'046c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0470     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0474     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0478     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'047c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0480     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0484     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0488     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'048c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0490     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0494     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0498     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'049c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04a0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04a4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04a8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04ac     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04b0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04b4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04b8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04bc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04c0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04c4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04c8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04cc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04d0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04d4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04d8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04dc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04e0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04e4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04e8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04ec     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04f0     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04f4     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04f8     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'04fc     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0500     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0504     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0508     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'050c     0x4  startup_gd32f450_470.o [1]
+  .text     ro code   0x800'0510     0x4  startup_gd32f450_470.o [1]
+                    - 0x800'0514   0x368
+
+"P2":                             0x2000
+  CSTACK             0x2000'0000  0x2000  <Block>
+    CSTACK  uninit   0x2000'0000  0x2000  <Block tail>
+                   - 0x2000'2000  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'0514   0x80f'ffff  0xf'faec
+  0x2000'2000  0x2002'ffff  0x2'e000
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj: [1]
+    main.o                        2
+    startup_gd32f450_470.o      836
+    system_gd32f4xx.o           344
+    -------------------------------------------------
+    Total:                    1'182
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+dlpp7M_tl_nc.a: [3]
+    -------------------------------------------------
+    Total:
+
+m7M_tls.a: [4]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [5]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    -------------------------------------------------
+    Total:                       52
+
+shb_l.a: [6]
+    exit.o                       20
+    unwind_debug.o                         1
+    -------------------------------------------------
+    Total:                       20        1
+
+    Gaps                          3
+    Linker created                              8'192
+-----------------------------------------------------
+    Grand Total:              1'299        1    8'192
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+?main                    0x800'0329        Code  Gb  cmain.o [5]
+CSTACK$$Base            0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2000         --   Gb  - Linker created -
+Region$$Table$$Base             0x0         --   Gb  - Linker created -
+Region$$Table$$Limit            0x0         --   Gb  - Linker created -
+SystemInit               0x800'01ad  0x82  Code  Gb  system_gd32f4xx.o [1]
+__cmain                  0x800'0329        Code  Gb  cmain.o [5]
+__exit                   0x800'035d  0x14  Code  Gb  exit.o [6]
+__iar_debug_exceptions   0x800'0326   0x1  Data  Gb  unwind_debug.o [6]
+__iar_init_vfp           0x800'0305        Code  Gb  fpinit_M.o [4]
+__iar_program_start      0x800'0381        Code  Gb  cstartup_M.o [5]
+__low_level_init         0x800'0347   0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000        Data  Gb  startup_gd32f450_470.o [1]
+_call_main               0x800'0335        Code  Gb  cmain.o [5]
+_exit                    0x800'0351        Code  Gb  cexit.o [5]
+_main                    0x800'0343        Code  Gb  cmain.o [5]
+exit                     0x800'034d   0x4  Code  Gb  exit.o [2]
+main                     0x800'034b   0x2  Code  Gb  main.o [1]
+system_clock_200m_25m_hxtal
+                         0x800'0237  0xa2  Code  Lc  system_gd32f4xx.o [1]
+system_clock_config      0x800'022f   0x8  Code  Lc  system_gd32f4xx.o [1]
+
+
+[1] = E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\Debug\Obj
+[2] = dl7M_tln.a
+[3] = dlpp7M_tl_nc.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  1'299 bytes of readonly  code memory
+      1 byte  of readonly  data memory
+  8'192 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

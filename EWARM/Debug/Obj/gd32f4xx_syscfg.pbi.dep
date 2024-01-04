@@ -1,17 +1,49 @@
 gd32f4xx_syscfg.pbi: \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Source\gd32f4xx_syscfg.c \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cm4.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Source\gd32f4xx_syscfg.c \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\gd32f4xx.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cm4.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
   D:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cmInstr.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cmInstr.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\cmsis_iar.h \
   D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c/iccarm_builtin.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cmFunc.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cm4_simd.h \
-  E:\FOC\Software\Esp32_Foc_Learn_Prj\03-interface-bsp-IAR\EWARM\..\src\bsp\mcu\gd32\CMSIS\GD\GD32F4xx\Include/system_gd32f4xx.h
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cmFunc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\CMSIS\core_cm4_simd.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32/system_gd32f4xx.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32/gd32f4xx_libopt.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdlib.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
+  D:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product_stdlib.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h \
+  E:\FOC\Software\Esp32_Foc_Learn_Prj\MotorDriver\EWARM\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h

@@ -346,6 +346,7 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
+                    <state>$PROJ_DIR$\..\src\bsp\mcu\gd32</state>
                     <state>$PROJ_DIR$\..\src\bsp\mcu\gd32\CMSIS</state>
                     <state>$PROJ_DIR$\..\src\bsp\mcu\gd32\CMSIS\GD\GD32F4xx\Include</state>
                     <state>$PROJ_DIR$\..\src\bsp\mcu\gd32\GD32F4xx_standard_peripheral\Include</state>
@@ -2124,6 +2125,9 @@
         <file>
             <name>$PROJ_DIR$\..\src\app\app_servo_motor.h</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\app\main.cpp</name>
+        </file>
     </group>
     <group>
         <name>bsp</name>
@@ -2182,9 +2186,15 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\bsp\hal\uart.cpp</name>
+                <excluded>
+                    <configuration>Debug</configuration>
+                </excluded>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\bsp\hal\uart.h</name>
+                <excluded>
+                    <configuration>Debug</configuration>
+                </excluded>
             </file>
         </group>
         <group>
