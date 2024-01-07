@@ -40,11 +40,11 @@
                 </option>
                 <option>
                     <name>MemOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>MemFile</name>
-                    <state>$TOOLKIT_DIR$\CONFIG\debugger\GD\GD32F450xG.ddf</state>
+                    <state>$TOOLKIT_DIR$\CONFIG\debugger\GD\GD32F470xK.ddf</state>
                 </option>
                 <option>
                     <name>RunToEnable</name>
@@ -112,7 +112,7 @@
                 </option>
                 <option>
                     <name>FlashLoadersV3</name>
-                    <state>$TOOLKIT_DIR$\config\flashloader\GD\FlashGD32F450xG.board</state>
+                    <state>$TOOLKIT_DIR$\config\flashloader\GD\FlashGD32F470xK.board</state>
                 </option>
                 <option>
                     <name>OCImagesSuppressCheck1</name>
@@ -140,7 +140,7 @@
                 </option>
                 <option>
                     <name>OverrideDefFlashBoard</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OCImagesOffset1</name>
@@ -312,7 +312,7 @@
                 </option>
                 <option>
                     <name>CMSISDAPInterfaceRadio</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CMSISDAPInterfaceCmdLine</name>
@@ -433,7 +433,7 @@
                 </option>
                 <option>
                     <name>CMSISDAPSelectedCPUBehaviour</name>
-                    <state>0</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>ICpuName</name>
@@ -831,7 +831,7 @@
                 <option>
                     <name>CCJLinkResetList</name>
                     <version>6</version>
-                    <state>5</state>
+                    <state>7</state>
                 </option>
                 <option>
                     <name>CCJLinkInterfaceCmdLine</name>

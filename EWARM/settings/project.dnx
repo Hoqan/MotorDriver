@@ -36,19 +36,20 @@
         <TypeViol>0</TypeViol>
         <Stop>1</Stop>
     </MemConfig>
-    <Trace1>
-        <Enabled>0</Enabled>
-        <ShowSource>1</ShowSource>
-    </Trace1>
     <Simulator>
         <Freq>10000000</Freq>
         <FreqHi>0</FreqHi>
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <PlDriver>
-        <MemConfigValue>D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CONFIG\debugger\GD\GD32F450xG.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
+        <MemConfigValue>D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CONFIG\debugger\GD\GD32F470xK.ddf</MemConfigValue>
     </PlDriver>
     <Jet>
+        <JetConnSerialNo>CMSIS-DAP:</JetConnSerialNo>
+        <JetConnFoundProbes />
+        <PrevWtdReset>Connect during reset</PrevWtdReset>
+        <OnlineReset>Software</OnlineReset>
         <DisableInterrupts>0</DisableInterrupts>
         <LeaveRunning>0</LeaveRunning>
         <MultiCoreRunAll>0</MultiCoreRunAll>
@@ -56,6 +57,124 @@
     <ArmDriver>
         <EnableCache>1</EnableCache>
     </ArmDriver>
+    <SWOManager>
+        <SamplingDivider>8192</SamplingDivider>
+        <OverrideClock>0</OverrideClock>
+        <CpuClock>6619236</CpuClock>
+        <SwoClock>2228256</SwoClock>
+        <DataLogMode>0</DataLogMode>
+        <ItmPortsEnabled>63</ItmPortsEnabled>
+        <ItmTermIOPorts>1</ItmTermIOPorts>
+        <ItmLogPorts>0</ItmLogPorts>
+        <ItmLogFile>$PROJ_DIR$\ITM.log</ItmLogFile>
+        <PowerForcePC>1</PowerForcePC>
+        <PowerConnectPC>1</PowerConnectPC>
+    </SWOManager>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
+    <PlDdfRanges>
+        <ConfigRanges0>Memory Periph0 1073741824 524288 2</ConfigRanges0>
+        <ConfigRanges1>Memory RemapMem 0 134217728 1</ConfigRanges1>
+        <ConfigRanges2>Memory Periph1 1342177280 397312 2</ConfigRanges2>
+        <ConfigRanges3>Memory Periph2 2684354560 4096 2</ConfigRanges3>
+        <ConfigRanges4>Memory SysROM 536805376 31248 1</ConfigRanges4>
+        <ConfigRanges5>Memory ROM 536854528 16 1</ConfigRanges5>
+        <ConfigRanges6>Memory Flash 134217728 3145728 1</ConfigRanges6>
+        <ConfigRanges7>Memory ExtDev1 1610612736 1073741824 2</ConfigRanges7>
+        <ConfigRanges8>Memory Periph_BitBand 1107296256 16777216 2</ConfigRanges8>
+        <ConfigRanges9>Memory RAM0 268435456 65536 0</ConfigRanges9>
+        <ConfigRanges10>Memory ExtDev2 3221225472 536870912 2</ConfigRanges10>
+        <ConfigRanges11>Memory RAM1 536870912 720896 0</ConfigRanges11>
+        <ConfigRanges12>Memory RAM_BitBand 570425344 4194304 0</ConfigRanges12>
+        <ConfigRanges13>Memory SystemSFR 3758096384 1048576 2</ConfigRanges13>
+        <ConfigRanges14>Memory EXMC 1610612736 1073741824 2</ConfigRanges14>
+    </PlDdfRanges>
+    <PlCacheRanges>
+        <CustomRanges0>0 0 134217728 1 0</CustomRanges0>
+        <CustomRangesText0 />
+        <CustomRanges1>0 134217728 3145728 1 0</CustomRanges1>
+        <CustomRangesText1 />
+        <CustomRanges2>0 268435456 65536 0 0</CustomRanges2>
+        <CustomRangesText2 />
+        <CustomRanges3>0 536805376 31248 1 0</CustomRanges3>
+        <CustomRangesText3 />
+        <CustomRanges4>0 536854528 16 1 0</CustomRanges4>
+        <CustomRangesText4 />
+        <CustomRanges5>0 536870912 720896 0 0</CustomRanges5>
+        <CustomRangesText5 />
+        <CustomRanges6>0 570425344 4194304 0 0</CustomRanges6>
+        <CustomRangesText6 />
+        <CustomRanges7>0 1073741824 524288 2 0</CustomRanges7>
+        <CustomRangesText7 />
+        <CustomRanges8>0 1107296256 16777216 2 0</CustomRanges8>
+        <CustomRangesText8 />
+        <CustomRanges9>0 1342177280 397312 2 0</CustomRanges9>
+        <CustomRangesText9 />
+        <CustomRanges10>0 1610612736 1073741824 2 0</CustomRanges10>
+        <CustomRangesText10 />
+        <CustomRanges11>0 1610612736 1073741824 2 0</CustomRanges11>
+        <CustomRangesText11 />
+        <CustomRanges12>0 2684354560 4096 2 0</CustomRanges12>
+        <CustomRangesText12 />
+        <CustomRanges13>0 3221225472 536870912 2 0</CustomRanges13>
+        <CustomRangesText13 />
+        <CustomRanges14>0 3758096384 1048576 2 0</CustomRanges14>
+        <CustomRangesText14 />
+    </PlCacheRanges>
+    <DebugChecksum>
+        <Checksum>1715534469</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <ETMTraceWindow>
+        <PortWidth>4</PortWidth>
+        <PortMode>0</PortMode>
+        <CaptureDataValues>0</CaptureDataValues>
+        <CaptureDataAddresses>0</CaptureDataAddresses>
+        <CaptureDataRange>0</CaptureDataRange>
+        <DataFirst>0</DataFirst>
+        <DataLast>4294967295</DataLast>
+        <StopWhen>0</StopWhen>
+        <StallCPU>0</StallCPU>
+        <NoPCCapture>0</NoPCCapture>
+    </ETMTraceWindow>
+    <Trace2>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+    </Trace2>
+    <SWOTraceWindow>
+        <ForcedPcSampling>0</ForcedPcSampling>
+        <ForcedInterruptLogs>0</ForcedInterruptLogs>
+        <ForcedItmLogs>0</ForcedItmLogs>
+        <EventCPI>0</EventCPI>
+        <EventEXC>0</EventEXC>
+        <EventFOLD>0</EventFOLD>
+        <EventLSU>0</EventLSU>
+        <EventSLEEP>0</EventSLEEP>
+    </SWOTraceWindow>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>

@@ -49,16 +49,16 @@
                 <option>
                     <name>GRuntimeLibSelect</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>GRuntimeLibSelectSlave</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>RTDescription</name>
-                    <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
+                    <state>Use the full configuration of the C/C++ runtime library. Full locale interface, C locale, file descriptor support, multibytes in printf and scanf, and hex floats in strtod.</state>
                 </option>
                 <option>
                     <name>OGProductVersion</name>
@@ -78,7 +78,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>GD32F450xG	GD GD32F450xG</state>
+                    <state>GD32F470xK	GD GD32F470xK</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -112,7 +112,7 @@
                 </option>
                 <option>
                     <name>RTConfigPath2</name>
-                    <state>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</state>
+                    <state>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</state>
                 </option>
                 <option>
                     <name>GBECoreSlave</name>
@@ -125,7 +125,7 @@
                 </option>
                 <option>
                     <name>OGUseCmsisDspLib</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GRuntimeLibThreads</name>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>GD32F450xG	GD GD32F450xG</state>
+                    <state>GD32F470xK	GD GD32F470xK</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -357,6 +357,7 @@
                     <state>$PROJ_DIR$\..\src\utils\container</state>
                     <state>$PROJ_DIR$\..\src\utils\math</state>
                     <state>$PROJ_DIR$\..\src\utils\timers</state>
+                    <state>$PROJ_DIR$\..\src\utils\RTT</state>
                     <state>$PROJ_DIR$\..\src\app</state>
                     <state>$PROJ_DIR$\..\src\bsp</state>
                     <state>$PROJ_DIR$\..\src</state>
@@ -782,7 +783,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\GD\GD32F450xG.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\GD\GD32F470xK.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2127,6 +2128,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\src\app\main.cpp</name>
+            <excluded>
+                <configuration>Debug</configuration>
+            </excluded>
         </file>
     </group>
     <group>
@@ -2158,10 +2162,10 @@
         <group>
             <name>hal</name>
             <file>
-                <name>$PROJ_DIR$\..\src\bsp\hal\iic.cpp</name>
+                <name>$PROJ_DIR$\..\src\bsp\hal\iic.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\bsp\hal\iic.h</name>
+                <name>$PROJ_DIR$\..\src\bsp\hal\iic.tpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\bsp\hal\iostream.h</name>
@@ -2343,6 +2347,15 @@
         </file>
     </group>
     <group>
+        <name>test</name>
+        <file>
+            <name>$PROJ_DIR$\..\src\test\test_ssd1306.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\test\test_systimer.cpp</name>
+        </file>
+    </group>
+    <group>
         <name>utils</name>
         <group>
             <name>container</name>
@@ -2375,6 +2388,24 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\utils\math\pid.h</name>
+            </file>
+        </group>
+        <group>
+            <name>RTT</name>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_ASM_ARMv7M.S</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_Conf.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_printf.c</name>
             </file>
         </group>
         <group>

@@ -2410,10 +2410,10 @@
         <group>
             <name>hal</name>
             <file>
-                <name>$PROJ_DIR$\..\src\bsp\hal\iic.cpp</name>
+                <name>$PROJ_DIR$\..\src\bsp\hal\iic.h</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\src\bsp\hal\iic.h</name>
+                <name>$PROJ_DIR$\..\src\bsp\hal\iic.tpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\bsp\hal\iostream.h</name>
@@ -2589,6 +2589,15 @@
         </file>
     </group>
     <group>
+        <name>test</name>
+        <file>
+            <name>$PROJ_DIR$\..\src\test\test_ssd1306.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\src\test\test_systimer.cpp</name>
+        </file>
+    </group>
+    <group>
         <name>utils</name>
         <group>
             <name>container</name>
@@ -2621,6 +2630,24 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\src\utils\math\pid.h</name>
+            </file>
+        </group>
+        <group>
+            <name>RTT</name>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_ASM_ARMv7M.S</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_Conf.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\src\utils\RTT\SEGGER_RTT_printf.c</name>
             </file>
         </group>
         <group>
