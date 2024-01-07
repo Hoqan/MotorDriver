@@ -36,12 +36,12 @@ public:
         PULLDOWN
     };
 
-    void initClk();
-    void setMux(Mux mux);
-    void setMode(InputMode inputmode, PullOption pullmode);
-    void setup(Mux mux, InputMode inputmode, PullOption pullmode);
-    void DigitalOutput(uint8_t level);
-    void DigitalInput(uint8_t *level);
+    void initClk() const;
+    void setMux(Mux mux) const;
+    void setMode(InputMode inputmode, PullOption pullmode) const;
+    void setup(Mux mux, InputMode inputmode, PullOption pullmode) const;
+    void DigitalOutput(uint8_t level) const;
+    void DigitalInput(uint8_t *level) const;
 private:
     Pin pin_;
 

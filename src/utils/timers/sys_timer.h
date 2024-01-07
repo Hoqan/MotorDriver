@@ -9,24 +9,23 @@ template <typename T>
 class SysTimer {
   public:
     SysTimer();
-//    ~Systimer() = default;
 
     void init();
 
-    /*
-     * max time=65535us
+    /**
+     * max time=999us
      */
     static inline T micros()
     {
-        return TIMER_CNT(TIMER0);
+        return TIMER_CNT(TIMER1);
     }
 
-    /*
+    /**
      * max time=65535ms
      */
     static inline T millis()
     {
-        return TIMER_CNT(TIMER1);
+        return TIMER_CNT(TIMER0);
     }
 
     /**
@@ -40,12 +39,12 @@ class SysTimer {
     static void delayUs(uint32 us);
 
   private:
-    static T max_cnt_;
+    static const T max_cnt_;
 
   private:
     static inline T deltaTime(T t1, T t2)
     {
-        return (t2 > t1) ? (t2 - t1) : (t2 - t1 + max_cnt_);
+        return (t2 >= t1) ? (t2 - t1) : (t2 - t1 + max_cnt_);
     }
 };
 

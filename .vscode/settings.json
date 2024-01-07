@@ -1,7 +1,19 @@
 {
     "files.associations": {
         "limits": "cpp",
-        "*.tpp": "cpp"
+        "*.tpp": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstdarg": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "exception": "cpp",
+        "type_traits": "cpp",
+        "new": "cpp",
+        "*.tcc": "cpp",
+        "cstdint": "cpp",
+        "typeinfo": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

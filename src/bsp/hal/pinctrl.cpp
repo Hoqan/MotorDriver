@@ -14,7 +14,7 @@ PinCtrl::PinCtrl(uint32_t port, uint32_t num) {
     pin_.num = num;
 }
 
-void PinCtrl::initClk() {
+void PinCtrl::initClk() const {
     rcu_periph_enum gpio_clk;
 
     switch (pin_.num) {
@@ -51,7 +51,7 @@ void PinCtrl::initClk() {
     rcu_periph_clock_enable(gpio_clk);
 }
 
-void PinCtrl::setMux(Mux mux) {
+void PinCtrl::setMux(Mux mux) const {
 
     switch (mux) {
         case GPIO:
@@ -73,7 +73,7 @@ void PinCtrl::setMux(Mux mux) {
     }
 }
 
-void PinCtrl::setMode(InputMode inputmode, PullOption pullmode) {
+void PinCtrl::setMode(InputMode inputmode, PullOption pullmode) const {
     uint32_t in_m;
     uint32_t pull_m;
 
@@ -108,20 +108,20 @@ void PinCtrl::setMode(InputMode inputmode, PullOption pullmode) {
     // gpio_output_options_set(pin_.port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, pin_.num); 
 }
 
-void PinCtrl::setup(Mux mux, InputMode inputmode, PullOption pullmode) {
+void PinCtrl::setup(Mux mux, InputMode inputmode, PullOption pullmode) const {
     initClk();
     setMux(mux);
     setMode(inputmode, pullmode);
 }
 
-void PinCtrl::DigitalOutput(uint8_t level) {
+void PinCtrl::DigitalOutput(uint8_t level) const {
     bit_status bit_lev;
 
     bit_lev = (level == 1) ? SET : RESET;
     gpio_bit_write(pin_.port, pin_.num, bit_lev);
 }
 
-void PinCtrl::DigitalInput(uint8_t *level) {
+void PinCtrl::DigitalInput(uint8_t *level) const {
     bit_status bit_lev;
     
     bit_lev = gpio_input_bit_get(pin_.port, pin_.num);

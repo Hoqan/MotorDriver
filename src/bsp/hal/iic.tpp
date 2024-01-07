@@ -6,21 +6,33 @@ IIC<T>::IIC()
 }
 
 template <typename T>
+IIC<T>::IIC(IICConfig cfg) : iic_cfg_(cfg)
+{
+}
+
+template <typename T>
 void IIC<T>::init()
 {
-    iic_cfg_.pins.clk->setup(PinCtrl::IIC, PinCtrl::AF, PinCtrl::NONE);
-    iic_cfg_.pins.data->setup(PinCtrl::IIC, PinCtrl::AF, PinCtrl::NONE);
-    /* enable I2C clock */
-    rcu_periph_clock_enable(iic_cfg_.num);
-    /* configure I2C clock */
-    i2c_clock_config(iic_cfg_.num, iic_cfg_.speed, I2C_DTCY_2);
-    /* configure I2C address */
-    i2c_mode_addr_config(iic_cfg_.num, I2C_I2CMODE_ENABLE, I2C_ADDFORMAT_7BITS,
-                         iic_cfg_.slaver_addr);
-    /* enable I2CX */
-    i2c_enable(iic_cfg_.num);
-    /* enable acknowledge */
-    i2c_ack_config(iic_cfg_.num, I2C_ACK_ENABLE);
+    if (iic_cfg_.type == HARDWARE) {
+        iic_cfg_.pins.clk->setup(PinCtrl::IIC, PinCtrl::AF, PinCtrl::NONE);
+        iic_cfg_.pins.data->setup(PinCtrl::IIC, PinCtrl::AF, PinCtrl::NONE);
+        /* enable I2C clock */
+        rcu_periph_clock_enable(iic_cfg_.clk);
+        /* configure I2C clock */
+        i2c_clock_config(iic_cfg_.interface, iic_cfg_.speed, I2C_DTCY_2);
+        /* configure I2C address */
+        i2c_mode_addr_config(iic_cfg_.interface, I2C_I2CMODE_ENABLE,
+                             I2C_ADDFORMAT_7BITS, iic_cfg_.dev_addr);
+        /* enable I2CX */
+        i2c_enable(iic_cfg_.interface);
+        /* enable acknowledge */
+        i2c_ack_config(iic_cfg_.interface, I2C_ACK_ENABLE);
+    }
+    else if (iic_cfg_.type == SOFT) {
+        iic_cfg_.pins.clk->setup(PinCtrl::GPIO, PinCtrl::OUTPUT, PinCtrl::NONE);
+        iic_cfg_.pins.data->setup(PinCtrl::GPIO, PinCtrl::OUTPUT,
+                                  PinCtrl::NONE);
+    }
 }
 
 template <typename T>
@@ -71,30 +83,30 @@ uint8_t IIC<T>::writeByte(uint8_t byte)
     if (iic_cfg_.type == SOFT) {
         for (i = 0; i < 8; i++) {
             if (byte & 0x80) {
-                iic_cfg_.pins->data.DigitalOutput(1);
+                iic_cfg_.pins.data->DigitalOutput(1);
             }
             else {
-                iic_cfg_.pins->data.DigitalOutput(0);
+                iic_cfg_.pins.data->DigitalOutput(0);
             }
 
             // DelayUs();
-            iic_cfg_.pins->clk.DigitalOutput(1);
+            iic_cfg_.pins.clk->DigitalOutput(1);
             Timer::delayUs(10);
             Timer::delayUs(10);
             Timer::delayUs(10);
-            iic_cfg_.pins->clk.DigitalOutput(0);
+            iic_cfg_.pins.clk->DigitalOutput(0);
             byte <<= 1;
         }
 
-        iic_cfg_.pins->data.DigitalOutput(1);
+        iic_cfg_.pins.data->DigitalOutput(1);
         Timer::delayUs(10);
-        iic_cfg_.pins->clk.DigitalOutput(1);
+        iic_cfg_.pins.clk->DigitalOutput(1);
         Timer::delayUs(10);
         Timer::delayUs(10);
-        iic_cfg_.pins->data.DigitalInput(&ack);
-        iic_cfg_.pins->clk.DigitalOutput(0);
+        iic_cfg_.pins.data->DigitalInput(&ack);
+        iic_cfg_.pins.clk->DigitalOutput(0);
     }
-    
+
     return ack;
 }
 

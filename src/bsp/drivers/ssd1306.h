@@ -12,6 +12,7 @@ class SSD1306 {
     static constexpr uint8_t MAX_COLUMN = 128;
 
     SSD1306();
+    SSD1306(IIC<uint8_t>* iic);
     ~SSD1306() = default;
 
     void init();

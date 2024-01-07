@@ -3,6 +3,8 @@
 
 SSD1306::SSD1306() {}
 
+SSD1306::SSD1306(IIC<uint8_t>* iic) : iic_(iic) {}
+
 void SSD1306::init()
 {
     writeCmd(0xAE);  // display off

@@ -29,6 +29,7 @@ class IIC : public IOstream<T> {
     };
 
     IIC();
+    IIC(IICConfig cfg);
     virtual ~IIC() = default;
 
     void init();
@@ -48,6 +49,8 @@ class IIC : public IOstream<T> {
     uint8_t writeByte(uint8_t byte);
 
   private:
-    IICConfig iic_cfg_;
+    IICConfig &iic_cfg_;
     uint32_t  timeout_cnt_;
 };
+
+#include "iic.tpp"
